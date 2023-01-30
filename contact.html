@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Resume Website</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Roboto+Mono:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <!--First Section-->
+        <section class="sub-header">
+            <nav>
+                <a href ="index.html"><img src="images/mylogo33.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick ="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="projects.html">PROJECTS</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                        
+                    </ul>
+
+                </div>
+                <i class="fa fa-bars" onclick ="showMenu()" ></i>
+
+            </nav>
+            <h1>CONTACT</h1>
+        </section>
+
+        <!--Contact section-->
+
+        <section class="contact-me">
+            <div class="row">
+                <div class="contact-col">
+                    <div>
+                        <i class="fa fa-home"></i>
+                        <span>
+                            <h5>Residance</h5>
+                            <p>////</p>
+                        </span>
+                    </div>
+                    <div>
+                        <i class="fa fa-phone"></i>
+                        <span>
+                            <h5>Phone Number</h5>
+                            <p>////</p>
+                        </span>
+                    </div>
+                    <div>
+                        <i class="fa fa-envelope-o"></i>
+                        <span>
+                            <h5>Email</h5>
+                            <p>////</p>
+                        </span>
+
+                    </div>
+                </div>
+                <div class="contact-col">
+                    <form action="">
+                        <input type="text" placeholder="Enter your name" required>
+                        <input type="email" placeholder="Enter your email" required>
+                        <input type="text" placeholder="Enter your Company" required>
+                        <textarea rows="8" placeholder="Message"></textarea>
+                        <button type="submit class=hero-btn red-btn">Send Message</button>
+                    </form>
+
+                </div>
+
+            </div>
+
+
+
+        </section>
+
+       
+
+
+        
+        <!--footer -->
+        <section class="footer">
+             <h4>Socials</h4>
+             <p>Paragraph</p>
+             <div class="icons">
+                <i class="fa fa-linkedin"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-envelope"></i>
+             </div>
+
+
+        </section>
+
+
+
+
+         
+        <!--Toggle For Menu-->
+
+        <script>
+            var navLinks = document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right ="0";
+
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px"
+            }
+
+
+
+
+        </script>
+
+    </body>
+</html>
